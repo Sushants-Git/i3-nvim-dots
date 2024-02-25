@@ -1,0 +1,32 @@
+= --> for formatting
+=ap --> format everything
+f<some text> --> to get to that word in a line
+O --> create a line and inset mode into it
+whenever you update packer do :so and then :PackerSync
+<leader>pv --> same as doing :Ex gets you into the file mode
+% --> Create a file
+D --> Create a dir
+Vyp --> copy current line and paste it into the next line
+%s/<first>/<second> --> find and replace
+<leader>ps --> to grep some files
+A ---> get to the end of a line and then get into insert mode
+x --> to remove a character
+C --> remove everything after this place
+D --> Remove everything on this line after this place
+:lua ColorMyPencils() --> to apply the theme
+TSPlaygroundToggle ---> to see the AST
+<leader> a --> to copy a file path into harpoon
+C-e to open harpoon
+now you can switch between these paths
+p for pasting below and P for pasting above
+C-h and C-t to move around harpoon
+<leader>u --> to see the undo tree
+C-Space to start compleletion
+C-p and C-n to go up and down
+C-y for confirming
+
+:Mason 
+
+
+highlight somethign then do J or K to highlight and move
+gg ---> go to top, G ---> go to bottom
