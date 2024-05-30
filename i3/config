@@ -192,25 +192,25 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-	colors {
-	background #1d2021
-	statusline #ffffff
+# bar {
+# 	colors {
+# 	background #1d2021
+# 	statusline #ffffff
 
-	focused_workspace  #ffffff #285577
-	active_workspace   #ffffff #333333
-	inactive_workspace #888888 #222222
-	urgent_workspace   #ffffff #900000
-	}
+# 	focused_workspace  #ffffff #285577
+# 	active_workspace   #ffffff #333333
+# 	inactive_workspace #888888 #222222
+# 	urgent_workspace   #ffffff #900000
+# 	}
     
-    font pango:Inconsolata 10
-        position top
-        tray_output none
-        status_command /usr/share/bumblebee-status/bumblebee-status\
-        -m time date battery pomodoro\
-        -p time.format="%H:%M" date.format="%a, %b %d" pomodoro.work="60" pomodoro.break="15" \
-        -t iceberg
-}
+#     font pango:Inconsolata 10
+#         position top
+#         tray_output none
+#         status_command /usr/share/bumblebee-status/bumblebee-status\
+#         -m time date battery pomodoro\
+#         -p time.format="%H:%M" date.format="%a, %b %d" pomodoro.work="60" pomodoro.break="15" \
+#         -t iceberg
+# }
 
 
 # Brightness control
@@ -237,7 +237,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 bindsym $mod+o exec cd /opt && ./Obsidian-1.4.16.AppImage
 
 ## Setting up wallpaper
-exec_always feh --bg-fill ~/Pictures/bg5.png
+exec_always feh --bg-fill ~/Pictures/bg2.png
 
 # Color variables
 set $unfocused_border #1D1F21
@@ -251,3 +251,24 @@ client.urgent           #ffffff #ffffff #ffffff #ffffff   $focused_border
 client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
 
 client.background       #ffffff
+
+# Set colors from xrdb. Colors must be set in xrdb before i3 config is loaded.
+set_from_resource $base00 color0  #000000
+set_from_resource $base01 color18 #000000
+set_from_resource $base02 color19 #000000
+set_from_resource $base03 color8  #000000
+set_from_resource $base04 color20 #000000
+set_from_resource $base05 color7  #000000
+set_from_resource $base06 color21 #000000
+set_from_resource $base07 color15 #000000
+set_from_resource $base08 color1  #000000
+set_from_resource $base09 color16 #000000
+set_from_resource $base0A color11 #000000
+set_from_resource $base0B color2  #000000
+set_from_resource $base0C color14 #000000
+set_from_resource $base0D color12 #000000
+set_from_resource $base0E color5  #000000
+set_from_resource $base0F color17 #000000
+
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
