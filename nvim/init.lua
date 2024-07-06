@@ -9,3 +9,5 @@ augroup END
 ]],
 	false
 )
+
+require'trouble'.setup {}

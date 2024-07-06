@@ -25,7 +25,7 @@ return require("packer").startup(function(use)
 	-- 		vim.cmd("colorscheme kanagawa")
 	-- 	end,
 	-- })
-
+    
 	use("neovim/nvim-lspconfig")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("MunifTanjim/prettier.nvim")
@@ -41,6 +41,10 @@ return require("packer").startup(function(use)
 	use("ray-x/guihua.lua") -- recommended if need floating window support
 	use("dfendr/clipboard-image.nvim")
 
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+        require("toggleterm").setup()
+    end}
+ 
 	use({
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",

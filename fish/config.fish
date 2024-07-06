@@ -25,5 +25,4 @@ alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
 # Recent installed packages
 alias rpkgs="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
-set -x BUN_INSTALL $HOME/.bun
-fish_add_path $BUN_INSTALL/bin
+source "$HOME/.cargo/env.fish"

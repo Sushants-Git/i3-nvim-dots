@@ -1,0 +1,6 @@
+shell = "fish"
+
+[font]
+normal = { family = "MonaspaceNeon" }
+size = 11.25
+
